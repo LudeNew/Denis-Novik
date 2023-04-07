@@ -1,21 +1,38 @@
 git config --global user.name "Your name"
 git config --global user.email "Your email"
 git init
+
+ssh-keygen - генерация SSH ключа
+git remote add origin (ссылка для связи с gitlab, без скобок) - связь с удаленным репозиторием
+
+
 git status
-git add (имя файла с расширением, без скобок)
-git status
-git rm (имя файла с расширением, без скобок)
-touch .gitignore
-git add *
+git add (имя файла с расширением, без скобок) - добавление файла в отслеживаемые
+git rm (имя файла с расширением, без скобок) - удаление файла из отслеживаемых, так же можно удалить файл из репозитория
+
+
 git add .
-git commit -m "Initial commit"
-git commit -m "Added Hello World"
-git log
-git diff
-git remote add origin (ссылка для связи с gitlab, без скобок)
-git remote
+git commit -m "Initial commit" - инициализационный (первый) коммит
+git commit -m "" - Коммит с описанием измеений
 git push -u origin (имя ветки, по умолчанию - master, без скобок)
-git branch (имя создаваемой ветки, без скобок)
-git checkout (имя ветки, на которую переключаетесь, без скобок)
-git merge (имя ветки, с которую хотим "влить" в текущую, без скобок)
+
+git branch (имя создаваемой ветки, без скобок) - Создание доп. ветки репозитория
+git checkout (имя ветки, на которую переключаетесь, без скобок) - переключение ветки
+git merge (имя ветки, с которую хотим "влить" в текущую, без скобок) - внести изменения из одной ветки, в другую
+git clone - актуализация репозитория, скачивание репозитория
+
+
+git log - Информация о коммитах
+git diff - Иноформация о изменениях в локальном репозитории после последнего коммита
+git remote - проверка связи с удаленным репозиторием
+touch .gitignore - создание файла gitignore
+git add *
+
+
+
+
+
+
+
+
 git clone (ссылка для клонирования с gitlab, без скобок)

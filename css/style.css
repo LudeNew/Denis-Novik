@@ -100,8 +100,9 @@
 }
 
 .preview__subtitle{
-    margin-top: 100px;
+    margin-top: 110px;
     margin-left: 297px;
+    margin-right: 347px;
 }
 
 .preview__subtitle_style{
@@ -113,7 +114,7 @@
 }
 
 .preview__language{
-    margin-top: 67px;
+    margin-top: 80px;
 }
 
 .preview__language_style{
@@ -121,6 +122,25 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+
+    transform: rotate(180deg);
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+
+    cursor: pointer;
+}
+
+.preview__lunguage_link{
+    color: #828282;
+    text-decoration: none;
+}
+.preview__lunguage_link:hover, .preview__lunguage_link:focus{
+    color: black;
+    transition: .3s;
+}
+
+.preview__lunguage_activ{
+    color: black;
 }
 
 .preview__img{
@@ -146,7 +166,6 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
 }
 
 .subtitle_about-position{
@@ -170,14 +189,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: 90px;
-    max-height: 166px;
-
     text-align: center;
 }
 
 .skills__item_style{
     margin-right: 30px;
+    padding-bottom: 77px;
 }
 .skills__item_style:last-child{
     margin-right: 0px;
@@ -197,6 +214,101 @@
     color: #828282;
 }
 
-.portfolio{
-    
+.title_portfolio-position{
+    padding-top: 115px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.portfolio__project{
+    text-align: center;
+}
+
+.portfolio__item{
+    margin-bottom: 100px;
+}
+.portfolio__item:last-child{
+    margin-bottom: 63px;
+}
+
+.portfolio__link{
+    padding-top: 46px;
+}
+
+.portfolio__link_style{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+}
+.portfolio__link_style:hover{
+    transition: .3s;
+    text-decoration: none;
+}
+
+.title_contacts-position{
+    padding-top: 150px;
+    text-align: center;
+}
+
+.subtitle_contacts-position{
+    padding-top: 21px;
+    text-align: center;
+}
+
+.button{
+    width: 180.5px;
+    height: 42px;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
+}
+
+.contacts__button{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 86px;
+}
+.button:hover{
+    background-color: #828282;
+    transition: .4s;
+
+}
+
+.button__text{
+    font-family: 'Gilroy';
+    font-style: normal;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+}
+
+.footer__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__item{
+    margin-right: 60px;
+}
+.footer__item:last-child{
+    margin-right: 0px;
+}
+
+.footer__subtitle_style{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+}
+
+.footer__subtitle_position{
+    margin-top: 45px;
+    text-align: center;
+    margin-bottom: 124px;
 }
