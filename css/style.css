@@ -29,6 +29,9 @@
 .wrapper{
     width: 940px;
     margin: 0 auto;
+
+    min-height: 100%;
+    overflow: hidden;
 }
 @media (max-width:1024px) {
     .wrapper{
@@ -36,7 +39,7 @@
     }
 }
 
-.wrapper__background_gray{
+._wrapper__background_gray{
     background-color: #F6F6F6;
 }
 
@@ -46,13 +49,69 @@
 
 
 /* Бургер меню */
+.header__burger{
+    display: none;
+
+    position: relative;
+    float: right;
+
+    width: 45px;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+.header__burger span{
+    position: absolute;
+    width: 35px;
+    height: 3.8px;
+    background-color: black;
+    left: 5px;
+}
+.header__burger span:nth-child(1){
+    transform: translateY(-9px);
+}
+.header__burger span:nth-child(3){
+    transform: translateY(9px);
+}
+/* Бургер меню */
+@media (max-width:700px){
+    .header__burger{
+        display: block;
+    }
+
+    .header__nav{
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 100px 20px 20px 20px;
+
+        /* Времененное скрытие шапки сайта */
+        display: none;
+    }
+
+    .header__list{
+        display: block;
+    }
+
+    .header__link{
+        font-size: 34px;
+        line-height: 41px;
+    }
+
+    .preview__language{
+        display: none;
+    }
+
+    .heager__line{
+        display: none;
+    }
+}
 
 
-
-.header__nav{
+/* .header__nav{
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 .header__list{
     display: flex;
@@ -100,6 +159,11 @@
 .preview__title{
     margin-top: 50px;
 }
+@media (max-width:700px) {
+    .preview__title{
+        margin-top: 0px;
+    }
+}
 
 .preview__title_style{
     font-family: 'gilroy';
@@ -113,6 +177,11 @@
     margin-top: 110px;
     margin-left: 297px;
     margin-right: 347px;
+}
+@media (max-width:700px) {
+    .preview__subtitle{
+        margin-top: 60px;
+    }
 }
 
 .preview__subtitle_style{
